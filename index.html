@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afbeelding Hernoemer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+</head>
+<body>
+    <h1>Afbeelding Hernoemer</h1>
+    <div class="input-container">
+      <label for="articleNumber">Artikelnummer:</label>
+      <input type="text" id="articleNumber" placeholder="Bijv. 21-001-0193-0">
+      <div>
+        <label>
+          <input type="checkbox" id="includePlan"> Inclusief plattegrond
+        </label>
+      </div>
+    </div>
+    <div id="dropzone">Sleep hier je afbeeldingen of klik om te uploaden</div>
+    <input type="file" id="fileInput" multiple style="display: none;">
+    <div class="preview-container" id="previewContainer"></div>
+    <button id="processButton">Bestanden hernoemen</button>
+    <button id="downloadAllButton">Download Alles</button>
+    <div class="output" id="output"></div>
+    <script src="/script.js"></script>
+</body>
+</html>
